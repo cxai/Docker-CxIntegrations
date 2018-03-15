@@ -4,12 +4,14 @@ Containerized versions of various CI/CD tools that Checkmarx can integrate with.
 
 All images are built with freely available software, which is licensed under open source or proprietary free and trial licenses.
 
+You can see all images on [Docker Hub](https://hub.docker.com/r/cxai/)
+
 Containers marked as GUI require X11 server on the host. See individual README files for more details.
 
 * Jenkins: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxJenkins), [image](https://hub.docker.com/r/cxai/cxjenkins/)
-* Jira: [dockerfile](tree/master/CxJira), [image](https://hub.docker.com/r/cxai/cxjira/)
-* IntelliJ (GUI): [dockerfile](tree/master/CxIntelliJ), [image](https://hub.docker.com/r/cxai/cxintellij/)
-* Checkmarx CLI: [dockerfile](tree/master/CxCLI), [image](https://hub.docker.com/r/cxai/cxcli/)
+* Jira: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxJira), [image](https://hub.docker.com/r/cxai/cxjira/)
+* IntelliJ (GUI): [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxIntelliJ), [image](https://hub.docker.com/r/cxai/cxintellij/)
+* Checkmarx CLI: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxCLI), [image](https://hub.docker.com/r/cxai/cxcli/)
 * Eclipse (GUI)
 * Ant
 * Maven
