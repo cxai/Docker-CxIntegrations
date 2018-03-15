@@ -6,7 +6,7 @@ All images are built with freely available software, which is licensed under ope
 
 Containers marked as GUI require X11 server on the host. See individual README files for more details.
 
-* Jenkins: [dockerfile](tree/master/CxJenkins), [image](https://hub.docker.com/r/cxai/cxjenkins/)
+* Jenkins: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxJenkins), [image](https://hub.docker.com/r/cxai/cxjenkins/)
 * Jira: [dockerfile](tree/master/CxJira), [image](https://hub.docker.com/r/cxai/cxjira/)
 * IntelliJ (GUI): [dockerfile](tree/master/CxIntelliJ), [image](https://hub.docker.com/r/cxai/cxintellij/)
 * Checkmarx CLI: [dockerfile](tree/master/CxCLI), [image](https://hub.docker.com/r/cxai/cxcli/)
