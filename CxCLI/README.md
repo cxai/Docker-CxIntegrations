@@ -1,6 +1,6 @@
 # Checkmarx CLI in a docker container
 
-CLI tool wrapped into a docker container. No special options are required to build the image: `docker build -t cxai/cxcli .`
+Latest CLI tool wrapped into a docker container. No special options are required to build the image: `docker build -t cxai/cxcli .`
 
 ## Running
 To see help run

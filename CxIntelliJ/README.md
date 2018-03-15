@@ -1,6 +1,6 @@
 # IntelliJ IDEA docker container for Checkmarx integration
 
-Graphical docker container that relies on the host X11 server to show the GUI.
+Latest version if JetBrain's IntelliJ editor. This is a GUI docker container that relies on the host X11 server to show the interface.
 
 No special options are required to build the image: `docker build -t cxai/cxintellij .`
 

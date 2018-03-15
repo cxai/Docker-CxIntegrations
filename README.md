@@ -4,7 +4,7 @@ Containerized versions of various CI/CD tools that Checkmarx can integrate with.
 
 All images are built with freely available software, which is licensed under open source or proprietary free and trial licenses.
 
-You can see all images on [Docker Hub](https://hub.docker.com/r/cxai/)
+You can see all the images listed on the [Docker Hub](https://hub.docker.com/r/cxai/).
 
 Containers marked as GUI require X11 server on the host. See individual README files for more details.
 
