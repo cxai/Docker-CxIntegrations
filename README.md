@@ -1,6 +1,6 @@
 # Docker images preconfigured for Checkmarx SAST
 
-Containerized versions of various CI/CD tools that Checkmarx can integrate with. Here you can find sources for the Cx integration images available for download off docker hub. If you are looking for the container based version of Checkmarx SAST itself look [here](https://github.com/alexivkin/Docker-CxCore).
+Containerized versions of various CI/CD tools that Checkmarx can integrate with. Here you can find sources for the Cx integration images available for download off docker hub. If you are looking for the container based version of Checkmarx SAST itself look [here](https://github.com/cxai/Docker-CxCore).
 
 All images are built with freely available software, which is licensed under open source or proprietary free and trial licenses.
 
@@ -32,5 +32,6 @@ Cloud based services:
 * MS-VSTS
 * WhiteSource
 
-## X11 Alternative
+## Alternative to X11 windows server
 In order to show Linux GUI apps without installing a windows version of an X org server try [this alternative](https://hub.docker.com/r/psharkey/novnc/), which serves a VNC screen over the web as an HTML5 canvas.
+You can also try [x11-bridge container](https://hub.docker.com/r/jare/x11-bridge/)
