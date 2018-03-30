@@ -1,6 +1,6 @@
 # Docker images preconfigured for Checkmarx SAST
 
-Containerized versions of various CI/CD tools that Checkmarx can integrate with. Here you can find sources for the Cx integration images available for download off docker hub. If you are looking for the container based version of Checkmarx SAST itself look [here](https://github.com/cxai/Docker-CxCore).
+Containerized versions of various CI/CD tools that Checkmarx can integrate with. Here you can find sources for the Cx integration images available for download off docker hub. If you are looking for the container based version of Checkmarx SAST itself look [here](https://github.com/cxai/Docker-CxCore)(private repo, you'll get 404 if you are not authorized).
 
 All images are built with freely available software, which is licensed under open source or proprietary free and trial licenses.
 
