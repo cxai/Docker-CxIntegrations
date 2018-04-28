@@ -1,12 +1,12 @@
 # IntelliJ IDEA docker container for Checkmarx integration
 
-Latest version if JetBrain's IntelliJ editor. This is a GUI docker container that relies on the host X11 server to show the interface.
+Latest version of JetBrain's IntelliJ editor. This is a GUI docker container that relies on the host X11 server to show the interface.
 
 No special options are required to build the image: `docker build -t cxai/cxintellij .`
 
 ## Running
 Allow local connections to your host's X server from the container and run the container
-* Linux: `xhost +local:$(docker inspect --format='{{ .Config.Hostname }}' cxai/cxintellij)`
+* Linux: `xhost +local:`
 * Windows: `& 'C:\Program Files (x86)\Xming\xming' :0 -ac -clipboard -multiwindow`
 
 Run:
@@ -14,7 +14,9 @@ Run:
 `docker run --name intellij --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v intellij:/root/ cxai/cxintellij`
 
 ## Setup
-Start IntelliJ, go into File -> Settings and install plugin from /opt/
+* Start IntelliJ, create a project by checking it out from a Git repo
+* Go to File -> Settings - CxViewer properties and configure it
+* Rightclick and submit a scan
 
 To change timezone add `-e "TZ=America/Los_Angeles"` to the `docker run` command
 

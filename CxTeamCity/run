@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run --name teamcity -d --rm -p 8111:8111 -v -v teamcity:/data/teamcity_server/datadir cxai/cxteamcity
+
+sleep 1
+firefox http://localhost:8111

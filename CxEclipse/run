@@ -6,4 +6,4 @@ if [[ -z "$(xhost|grep LOCAL)" ]]; then
 fi
 
 # $* to pass on any options from the command line
-docker run --name intellij --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v intellij:/root/ --net=host $* cxai/cxintellij
+docker run --name eclipse --rm -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v eclipse:/home/developer/ --net=host $* cxai/cxeclipse

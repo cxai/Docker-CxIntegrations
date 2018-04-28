@@ -12,12 +12,12 @@ Containers marked as GUI require X11 server on the host. See individual README f
 * Jira: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxJira), [image](https://hub.docker.com/r/cxai/cxjira/)
 * IntelliJ (GUI): [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxIntelliJ), [image](https://hub.docker.com/r/cxai/cxintellij/)
 * Checkmarx CLI: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxCLI), [image](https://hub.docker.com/r/cxai/cxcli/)
-* Eclipse (GUI)
+* Eclipse (GUI): [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxEclipse), [image](https://hub.docker.com/r/cxai/cxeclipse/)
+* TeamCity [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxTeamCity), [image](https://hub.docker.com/r/cxai/cxteamcity/)
 * Ant
 * Maven
 * Threadfix
 * Bamboo
-* TeamCity
 * SonarQube
 * TFS
 * LDAP
@@ -31,6 +31,15 @@ Windows GUI applications:
 Cloud based services:
 * MS-VSTS
 * WhiteSource
+
+# Setup
+
+* On Linux just run the supplied `run` script
+* On Windows get a X11 server like vcxsrv, start it and run the docker container with DISPLAY exported out:
+```
+start "X11" "C:\Program Files\VcXsrv\vcxsrv.exe" :0 -ac -clipboard -multiwindow -silent-dup-error
+start "IntelliJ" cmd.exe @cmd /k "docker run --name intellij --rm -it -e DISPLAY=$THIS_VM:0 -v intellij:/root/ cxai/cxintellij"
+```
 
 ## Alternative to X11 windows server
 In order to show Linux GUI apps without installing a windows version of an X org server try [this alternative](https://hub.docker.com/r/psharkey/novnc/), which serves a VNC screen over the web as an HTML5 canvas.

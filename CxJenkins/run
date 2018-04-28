@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run --name jenkins -d --rm -p 8081:8080 -v jenkins:/var/jenkins_home cxai/cxjenkins
+
+sleep 1
+firefox http://localhost:8081
