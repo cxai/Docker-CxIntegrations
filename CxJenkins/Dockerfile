@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:latest
 
 LABEL description="Jenkins with Checkmarx CxSAST plugin"
 LABEL maintainer="Alex Ivkin"
