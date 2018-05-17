@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run --name sonarqube -d --rm -p 9000:9000 -p 9092:9092 -v sonarqube:/opt/sonarqube/data cxai/cxsonarqube
+
+sleep 2
+firefox http://localhost:9000

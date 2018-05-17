@@ -14,11 +14,11 @@ Containers marked as GUI require X11 server on the host. See individual README f
 * Checkmarx CLI: [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxCLI), [image](https://hub.docker.com/r/cxai/cxcli/)
 * Eclipse (GUI): [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxEclipse), [image](https://hub.docker.com/r/cxai/cxeclipse/)
 * TeamCity [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxTeamCity), [image](https://hub.docker.com/r/cxai/cxteamcity/)
+* SonarQube [dockerfile](https://github.com/cxai/Docker-CxIntegrations/tree/master/CxSonarQube), [image](https://hub.docker.com/r/cxai/cxsonarqube/)
 * Ant
 * Maven
 * Threadfix
 * Bamboo
-* SonarQube
 * TFS
 * LDAP
 * SAML IdP
